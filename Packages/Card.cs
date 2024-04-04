@@ -1,9 +1,9 @@
 namespace game{
     public class Card{ 
-        public string name, ability;
-        public int attack, hp, cost;
-        Card(string name, int atk, int hp, int cost, string ability){ 
-            this.name = name;
+        private string cardName, ability;
+        private int attack, hp, cost;
+        public Card(string cardName, int atk, int hp, int cost, string ability){ 
+            this.cardName = cardName;
             attack = atk;
             this.hp = hp;
             this.cost = cost;
@@ -28,6 +28,27 @@ namespace game{
                     hp = 0; 
                 }
             }
+        }
+        public int cost{
+            get{return:hp}
+            set{
+                cost-value;
+                if (cost<0){
+                    cost=0;
+                }
+            }
+        }
+        public string ability{
+            get{return:ability}
+            set{
+                if(value==null){
+                    return ability;
+                }
+                ability = value;
+            }
+        }
+        public string getName(){
+            return cardName;
         }
         public static void Main(string[] args){
             ArrayList cardList = new ArrayList();
