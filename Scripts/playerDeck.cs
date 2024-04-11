@@ -11,7 +11,7 @@ public class playerDeck{
     public void startingCards(){
         switch (startingDeck){
             case 1:
-                CardList.getName()
+                CardList.getName();
         }
     }
 }
